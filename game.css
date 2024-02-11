@@ -1,0 +1,150 @@
+*{
+    background-color: #A7EDE7;
+}
+.ti{
+    /* display: none; */
+    font-family:"Segoe Script", Papyrus;
+    font-size: 70px;
+    font-weight: 900;
+    color: #40128B;
+    word-spacing: 30px;
+    text-align: center;
+    
+}
+.ti:hover{
+    cursor: pointer;
+    text-shadow: #9336B4 1px 0 10px;
+    
+}
+#game-board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+}
+.game-board{
+    display: none;
+    justify-content: center;
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    cursor: pointer;
+}
+.btn{
+    width: 100px;
+    height: 100px;
+}
+.icon{
+    margin-top: 2vh;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.icon button{
+    margin: 20px 90px;
+    padding: 10px 10px;
+    border-radius: 20px;  
+    
+}
+.icon button:hover,.icon img:hover{
+    background-color: #FF90BC;
+    cursor: pointer;
+}
+.select{
+    /* display: none; */
+    color: #9A0680;
+    font-size: 30px;
+    padding-top: 40px;
+    font-family: cursive;
+    word-spacing: 13px;
+    text-align: center;
+    /* text-decoration: overline underline; */
+}
+.select ul li{
+    list-style: none;
+}
+.line{
+    
+    color: #44D62C;
+    display: none;
+    text-align: center;
+    margin: 20px;
+    padding: 20px;
+    /* text-decoration: underline dashed; */
+    font-size: 80px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.line:hover{
+    text-shadow: #C4DFAA 1px 0 10px;
+    text-decoration: underline wavy;
+}
+.gb{
+    display: none;
+}
+.turn{
+    color: #9C0F48;
+    margin-top: 8vh;
+    font-size: 5vh;
+    text-align: center;
+    margin-bottom: 5vh;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: none;
+}
+.reset{
+    border: 2px solid black;
+    justify-content: center;
+    align-items: center;
+    margin-left: 45.1vw;
+    font-size: 30px;
+    border-radius: 20px;
+    padding: 10px 20px;
+    display: none;
+}
+.reset:hover{
+    background-color: black;
+    color: white;
+    box-shadow: 0px 0px 10px 5px #40128B;
+}
+.gw:hover{
+    cursor: pointer;
+    text-decoration: underline dashed;
+    color: red;
+}
+.head{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 40px;
+}
+.btn:hover{
+    background-color: #4D4DFF;
+}
+.lin{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 50px;
+    border: 5px solid #40128B;
+    width: 50vw;
+    position: relative;
+    left: 4vw;
+    animation: sideway 2s ease-in-out 1s infinite alternate;
+}
+@keyframes sideway {
+    0%{
+        left: 20vw;
+    }
+    50%{
+        left: 40vw;
+    }
+    100%{
+        left: vw;
+    }
+
+}

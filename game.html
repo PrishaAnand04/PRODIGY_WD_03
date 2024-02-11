@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game</title>
+    <link rel="stylesheet" href="game.css">
+</head>
+<body>
+    <div class="ti" id="ti">TIC TAC TOE!</div><br>
+    <div class="lin"></div>
+    <div class="select" id="select"><p class="head">Before you start playing,<br>There are some points which are important for you :</p><ul><li>1. This is multi-player Game, obviously :\</li><br><li>2. This is basically the exact same copy of paper-pen game but digital,<br>coz we need to save paper, duhh! <br><u class="gw">Global Warmingg</u></li><br><li>3. I have added 2 buttons below, click which ever you want but Player 1's will always start with 'X' becasue it's my choice and my web page so... <br>Can't help it. </li></ul><br> <div class="icon"><div><button class="cross" onclick="ga()"><img src="cross.png" alt=""></button></div><div><button class="zero" onclick="ga()"><img src="zero.png" alt=""></button></div></div></div>
+    <div class="bar"></div>
+    <div class="line" id="line">Game Board</div>
+    <div class="gb" id="gb">
+    <div id="game-board" class="game-board">
+        <div class="cell" data-cell-index="1"><button id="mybtn" class="btn"></button></div>
+        <div class="cell" data-cell-index="0"><button id="mybtn" class="btn"></button></div>
+        <div class="cell" data-cell-index="2"><button id="mybtn" class="btn"></button></div>
+        <div class="cell" data-cell-index="3"><button id="mybtn" class="btn"></button></div>
+        <div class="cell" data-cell-index="4"><button id="mybtn" class="btn"></button></div>
+        <div class="cell" data-cell-index="5"><button id="mybtn" class="btn"></button></div>
+        <div class="cell" data-cell-index="6"><button id="mybtn" class="btn"></button></div>
+        <div class="cell" data-cell-index="7"><button id="mybtn" class="btn"></button></div>
+        <div class="cell" data-cell-index="8"><button id="mybtn" class="btn"></button></div>
+    </div>
+</div>
+<div id="turn" class="turn">Click to start your Game</div>
+<button class="reset" id="reset-button">Reset</button>
+    <script src="game.js"></script>
+    
+</body>
+</html>
